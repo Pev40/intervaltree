@@ -1,0 +1,12 @@
+
+#include <iostream>
+using namespace std;
+
+struct Nodo{
+    int IMin
+    int IMax
+    int array = new Integer[IMax-IMin]
+    Nodo *der
+    Nodo *izq
+}
+
