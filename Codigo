@@ -5,7 +5,13 @@ using namespace std;
 class Interval
 {
     public:
-        int low, high;      
+        int low, high;
+        Interval(int low , int high)
+        {
+            this->low = low;
+            this->high = high;
+        }
+       
 }
 
 class Node
