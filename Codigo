@@ -23,6 +23,7 @@ class Interval
 class Node
 {   
     private:
+        Node *head;
         Interval *i;  
         int max;
         Nodo *left, *right;
@@ -36,7 +37,7 @@ class Node
             return temp;
         }
         
-        void InsertNode(Node *head , Interval i )
+        void InsertNode(head , Interval i )
         {   
             if (head == NULL)
                 return newNode(i);
