@@ -11,11 +11,7 @@ class Interval
             this->low = low;
             this->high = high;
         }
-       Interval(Interval i)
-        {
-            i.low= low;
-            i.high = high;
-        }
+       
        
 }
 
