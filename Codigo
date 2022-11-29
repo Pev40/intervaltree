@@ -24,7 +24,10 @@ class Node
             return temp;
         }
         
-        void InsertNode();
+        void InsertNode(Node *head , Interval i )
+        {   
+            
+        }
         void EliminarNode();
         void BuscarNode();
 }
