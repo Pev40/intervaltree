@@ -11,6 +11,11 @@ class Interval
             this->low = low;
             this->high = high;
         }
+        Interval(int i)
+        {
+            low =  0;
+            high = 0; 
+        }
        
 }
 
