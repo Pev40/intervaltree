@@ -29,10 +29,10 @@ class Node
         Nodo *left, *right;
         
     public:
-        void newNode(Interval i){
+        void newNode(Interval newInterval){
             Node *temp = new Node;
-            temp->i = new Interval(i);
-            temp->max = i.high;
+            temp->newInterval = new Interval(i);
+            temp->max = newInterval.high;
             temp->left = temp->right = NULL;
             return temp;
         }
