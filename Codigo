@@ -2,17 +2,21 @@
 #include <iostream>
 using namespace std;
 
-struct Interval
+class Interval
 {
-    int low, high;
+    public:
+        int low, high;
+       
 }
 
-struct Node
-{
-    Interval *i;  
-    int max;
-    Nodo *left, *right;
+class Node
+{   
+    private:
+        Interval *i;  
+        int max;
+        Nodo *left, *right;
 };
+
 
 Node * newNode(Interval i)
 {
