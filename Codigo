@@ -26,7 +26,7 @@ class Node
         
         void InsertNode(Node *head , Interval i )
         {   
-            if (root == NULL)
+            if (head == NULL)
                 return newNode(i);
             
         }
