@@ -37,24 +37,24 @@ class Node
             return temp;
         }
         
-        Node InsertNode(head , Interval i )
+        Node InsertNode(head , Interval newInterval )
         {   
             if (head == NULL)
-                return newNode(i);
+                return newNode(newInterval);
                 
-            int datalow = head->i->low;
+            int datalow = head->newInterval->low;
            
-            if (i.low < datalow){
-                head->left = InsertNode(head->left, i);
+            if (newInterval.low < datalow){
+                head->left = InsertNode(head->left, newInterval);
             } 
             
             else{
-                head->right = InsertNode(head->right, i);
+                head->right = InsertNode(head->right, newInterval);
             }
             
-            if (head->max < i.high) //Se actualiza el valor de max cada vez que añadimos un nodo
+            if (head->max < newInterval.high) //Se actualiza el valor de max cada vez que añadimos un nodo
             {
-                head->max = i.high;
+                head->max = newInterval.high;
             }
             
             return head;
