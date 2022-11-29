@@ -29,7 +29,7 @@ class Node
         Nodo *left, *right;
         
     public:
-        void newNode(Interval newInterval){
+        Node newNode(Interval newInterval){
             Node *temp = new Node;
             temp->newInterval = new Interval(i);
             temp->max = newInterval.high;
@@ -37,7 +37,7 @@ class Node
             return temp;
         }
         
-        void InsertNode(head , Interval i )
+        Node InsertNode(head , Interval i )
         {   
             if (head == NULL)
                 return newNode(i);
