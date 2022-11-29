@@ -14,16 +14,20 @@ class Node
         Interval *i;  
         int max;
         Nodo *left, *right;
+        
+    public:
+        void newNode(Interval i){
+            Node *temp = new Node;
+            temp->i = new Interval(i);
+            temp->max = i.high;
+            temp->left = temp->right = NULL;
+            return temp;
+        }
+        
+        void InsertNode();
+        void EliminarNode();
+        void BuscarNode();
 }
 
 
-Node * newNode(Interval i)
-{
-    Node *temp = new Node;
-    temp->i = new Interval(i);
-    temp->max = i.high;
-    temp->left = temp->right = NULL;
-    return temp;
-};
 
-Node *insert(Node *head, Interval i)
