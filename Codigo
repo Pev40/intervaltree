@@ -54,7 +54,7 @@ class Node
             
             if (head->max < newInterval.high) //Se actualiza el valor de max cada vez que añadimos un nodo
             {
-                head->max = newInterval.high;
+                max = newInterval.high;
             }
             
             return head;
