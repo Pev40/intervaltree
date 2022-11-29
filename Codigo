@@ -7,14 +7,14 @@ struct Interval
     int low, high;
 }
 
-struct Nodo
+struct Node
 {
     Interval *i;  
     int max;
     Nodo *left, *right;
 };
 
-Nodo * newNode(Interval i)
+Node * newNode(Interval i)
 {
     Node *temp = new Node;
     temp->i = new Interval(i);
@@ -23,3 +23,4 @@ Nodo * newNode(Interval i)
     return temp;
 };
 
+Node *insert(Node *head, Interval i)
