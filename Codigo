@@ -15,7 +15,7 @@ class Node
         Interval *i;  
         int max;
         Nodo *left, *right;
-};
+}
 
 
 Node * newNode(Interval i)
