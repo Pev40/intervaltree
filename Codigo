@@ -40,6 +40,23 @@ class Node
         {   
             if (head == NULL)
                 return newNode(i);
+                
+            int datalow = head->i->low;
+           
+            if (i.low < datalow){
+                head->left = InsertNode(head->left, i);
+            } 
+            
+            else{
+                head->right = InsertNode(head->right, i);
+            }
+            
+            if (head->max < i.high) //Se actualiza el valor de max cada vez que añadimos un nodo
+            {
+                head->max = i.high;
+            }
+            
+            return head;
             
         }
         void EliminarNode();
