@@ -2,11 +2,24 @@
 #include <iostream>
 using namespace std;
 
-struct Nodo{
-    int IMin
-    int IMax
-    int array = new Integer[IMax-IMin]
-    Nodo *der
-    Nodo *izq
+struct Interval
+{
+    int low, high;
 }
+
+struct Nodo
+{
+    Interval *i;  
+    int max;
+    Nodo *left, *right;
+};
+
+Nodo * newNode(Interval i)
+{
+    Node *temp = new Node;
+    temp->i = new Interval(i);
+    temp->max = i.high;
+    temp->left = temp->right = NULL;
+    return temp;
+};
 
